@@ -1,0 +1,5 @@
+
+W
+java:S1068#"5Remove this unused "vatIncludedAmount" private field.(…žòªúÿÿÿÿ8µÕþ´ü/
+t
+java:S1104"RMake amount a static final constant or non-public and provide accessors if needed.(ˆîëÏþÿÿÿÿ8µÕþ´ü/

@@ -1,0 +1,6 @@
+
+b	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ÎñÛº8 ¯Úü/
+¡
+java:S1130"ƒRemove the declaration of thrown exception 'javax.swing.text.ChangedCharSetException' which is a subclass of 'java.lang.Exception'.(ÎñÛº8ÄÀ”Úü/
+R
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8¢¯Úü/

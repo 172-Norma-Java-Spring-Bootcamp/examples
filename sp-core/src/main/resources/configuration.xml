@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="configuration-2.xml"/>
+
+    <bean class="dev.patika.spring.service.CustomerServiceImpl" id="customerService">
+        <constructor-arg name="orderService" ref="orderService"/>
+        <constructor-arg name="productService" ref="productService"/>
+    </bean>
+
+    <bean class="dev.patika.spring.controller.OrderController" id="orderController">
+        <constructor-arg name="orderService" ref="orderService"/>
+    </bean>
+
+</beans>
