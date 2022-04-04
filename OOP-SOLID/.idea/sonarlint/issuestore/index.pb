@@ -3,8 +3,6 @@ O
 src/dev/patika/spring/Main.java,f/9/f94f541ddc062375866943fa83c7ef9d2d232ade
 ‘
 asrc/dev/patika/spring/designpatternsofday/singleton/NonLazyInitializationThreadSafeSingleton.java,1/9/19a329d20b9bad9656ee7b1712ddf28c1df0adbf
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 \
 ,src/dev/patika/spring/clzzobjects/Order.java,7/1/71b08e84b1dc4eab321d9688586029ed04a4e45e
 `
