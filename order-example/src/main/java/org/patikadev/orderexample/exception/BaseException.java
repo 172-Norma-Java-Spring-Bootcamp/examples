@@ -1,7 +1,5 @@
 package org.patikadev.orderexample.exception;
 
-import java.io.File;
-
 public class BaseException extends RuntimeException {
 
     private final String message;

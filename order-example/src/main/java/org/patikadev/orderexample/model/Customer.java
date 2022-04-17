@@ -17,7 +17,7 @@ public class Customer extends BaseExtendedModel {
     private Gender gender;
     private String password;
 
-    @OneToOne(mappedBy = "customer",cascade = CascadeType.PERSIST)
+    @OneToOne(mappedBy = "customer", cascade = CascadeType.PERSIST)
     private CustomerAddress customerAddress;
 
 }

@@ -9,7 +9,6 @@ import org.patikadev.orderexample.model.Customer;
 import org.patikadev.orderexample.model.Gender;
 import org.patikadev.orderexample.repository.CustomerRepository;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor
