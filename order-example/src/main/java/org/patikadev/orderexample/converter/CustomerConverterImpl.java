@@ -1,7 +1,8 @@
 package org.patikadev.orderexample.converter;
 
+import org.patikadev.orderexample.dto.CreateCustomerRequestDTO;
 import org.patikadev.orderexample.dto.CustomerAddressDTO;
-import org.patikadev.orderexample.dto.CustomerDTO;
+import org.patikadev.orderexample.dto.GetCustomersResponseDTO;
 import org.patikadev.orderexample.model.Customer;
 import org.patikadev.orderexample.model.CustomerAddress;
 import org.springframework.stereotype.Component;
@@ -9,10 +10,11 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 
 @Component
-public class CustomerConverterImpl implements CustomerConverter {
+public
+class CustomerConverterImpl implements CustomerConverter {
 
     @Override
-    public Customer convert(CustomerDTO customerDTO) {
+    public Customer toCustomer(CreateCustomerRequestDTO customerDTO) {
 
         Customer customer = new Customer();
         customer.setUsername(customerDTO.userName());
@@ -37,12 +39,22 @@ public class CustomerConverterImpl implements CustomerConverter {
     }
 
     @Override
-    public CustomerDTO convert(Customer customer) {
-        return new CustomerDTO(customer.getUsername(),
+    public CreateCustomerRequestDTO toCreateCustomerRequest(Customer customer) {
+        return new CreateCustomerRequestDTO(customer.getUsername(),
                 customer.getEmail(),
                 customer.getIdentity(),
                 customer.getGender(),
                 customer.getPassword(),
+                convertCustomerAddressDto(customer.getCustomerAddress()));
+
+    }
+
+    @Override
+    public GetCustomersResponseDTO toGetCustomersResponse(Customer customer) {
+        return new GetCustomersResponseDTO(customer.getId(),
+                customer.getUsername(),
+                customer.getEmail(),
+                customer.getGender(),
                 convertCustomerAddressDto(customer.getCustomerAddress()));
 
     }

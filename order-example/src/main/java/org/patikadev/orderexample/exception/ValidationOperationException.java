@@ -1,8 +1,8 @@
 package org.patikadev.orderexample.exception;
 
-public final class ControllerOperationException {
+public final class ValidationOperationException {
 
-    private ControllerOperationException() {
+    private ValidationOperationException() {
     }
 
     public static class CustomerNotValidException extends BaseException {

@@ -29,4 +29,5 @@ public abstract class BaseExtendedModel extends BaseModel {
     @Column(length = 50)
     private String deletedBy;
 
+    private boolean isDeleted;
 }
